@@ -11,13 +11,15 @@ bits and bobs into your S3 account.
 
 3 Navigate to the /serendipity/terraform/ directory.
 
-4 Run 'terraform workspace new serendipity' (you should really call the workspace whatever you want but I haven't figured
+4 Create an ssh key - '$ ssh-keygen -f srdpt_key' or whatever you'd like to call it.
+
+  Run 'terraform workspace new serendipity' (you should really call the workspace whatever you want but I haven't figured
   out whether I can pass the bucket name as parameter to the init.sh script run as "user date" and so it expects the bucket
   to be called "serendipity-exercise-output-bucket").
 
 5 Run 'terraform apply' and type 'yes' (I promise its safe).
 
-  a) It will ask for the location of your public key (*.pub) you need to access the instance (useful for debugging)
+  a) It will ask for the location of your public key (*.pub) you need it to access the instance via (useful for debugging).
 
   b) It will also ask for the location of the init script which will run when the instance starts.
 
