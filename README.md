@@ -30,6 +30,8 @@ bits and bobs into your S3 account.
 6 In s3 search for the bucket - "serendipity-exercise-output-bucket" and you should have a file -
   <instance ip>_python_packages.txt inside it.
 
+7 Don't forget to run 'terraform destroy' afterwards.
+
 ### *Answers to other questions*
 
 1 To a kubernetes cluster, I would -
