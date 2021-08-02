@@ -3,7 +3,7 @@
 The idea is to run this locally and it should deploy an EC2, VPN, security group, S3 bucket, policies and other little
 bits and bobs into your S3 account.
 
-#Steps
+*Steps
 1 Ensure you have the credentials file in the right place and up to date -
   https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
 2 Install terraform on your local machine or wherever this will be run.
@@ -16,10 +16,10 @@ bits and bobs into your S3 account.
   b) It will also ask for the location of the init script which will run when the instance starts.
 7 Grab a coffee or tea.
 6 Via the AWS console or cli the instance should have been created and terminated.
-6 In s3 search for the bucket - "serendipity-exercise-output-bucket" and you should have a file
-  <instance ip>_python_packages.txt inside it
+6 In s3 search for the bucket - "serendipity-exercise-output-bucket" and you should have a file -
+  <instance ip>_python_packages.txt inside it.
 
-#Answers to other questions
+*Answers to other questions
 
 1 To a kubernetes cluster, I would -
   Build and push the latest Docker image to the right registry, usually aws ECR.
