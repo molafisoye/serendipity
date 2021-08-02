@@ -12,6 +12,8 @@ bits and bobs into your S3 account.
   out whether I can pass the bucket name as parameter to the init.sh script run as "user date" and so it expects the bucket
   to be called "serendipity-exercise-output-bucket").
 5 Run 'terraform apply' and type 'yes' (I promise its safe).
+  a) It will ask for the location of your public key (*.pub) you need to access the instance (useful for debugging)
+  b) It will also ask for the location of the init script which will run when the instance starts.
 7 Grab a coffee or tea.
 6 Via the AWS console or cli the instance should have been created and terminated.
 6 In s3 search for the bucket - "serendipity-exercise-output-bucket" and you should have a file
