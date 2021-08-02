@@ -1,0 +1,8 @@
+.idea
+.gradle
+build
+terraform/.terraform
+out/
+terraform.tfstate
+terraform.tfstate.backup
+srdpt_key.pem
