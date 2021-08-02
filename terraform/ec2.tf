@@ -13,7 +13,7 @@ resource "aws_instance" "serendipity_exercise_ec2" {
   key_name                    = aws_key_pair.serendipity_exercise_key.key_name
   iam_instance_profile        = aws_iam_instance_profile.ec2_exercise_role_profile.name
 
-  user_data = file(var.init_script_path aws_s3_bucket.serendipity_exercise_output_bucket.bucket)
+  user_data = file(var.init_script_path)
 
   tags = merge(local.tags, { "Name" : "${terraform.workspace}-exercise-ec2-instance" })
 }
