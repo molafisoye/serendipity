@@ -42,7 +42,7 @@ resource "aws_key_pair" "serendipity_exercise_key" {
 
 resource "aws_iam_role" "ec2-access-role" {
   name               = "ec2-access-role-${terraform.workspace}"
-  tags = merge(local.tags, { "Name" : "${terraform.workspace}-exercise-ec2-role" })
+  tags               = merge(local.tags, { "Name" : "${terraform.workspace}-exercise-ec2-role" })
   assume_role_policy = <<-EOF
 {
   "Version": "2012-10-17",

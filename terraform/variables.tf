@@ -5,10 +5,10 @@ variable "ingress_ports" {
 
 variable "ssh_public_key_file" {
   description = "The path to your local pub file"
-  type    = string
+  type        = string
 }
 
 variable "init_script_path" {
   description = "The local path to the init script"
-  type = string
+  type        = string
 }
