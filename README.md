@@ -34,10 +34,10 @@ bits and bobs into your S3 account.
 
 ### *Answers to other questions*
 
-1 To a kubernetes cluster, I would -
+1 To upgrade a kubernetes cluster, I would -
 
   Build and push the latest Docker image to the right registry, usually aws ECR.
-  if this for a production deployment it would usually be handled by a CI/CD pipeline tool such as Jenkins, GitHub Actions,
+  If this for a production deployment, it should be handled by a CI/CD pipeline tool such as Jenkins, GitHub Actions,
   Helm or Concourse.
 
   Use either the kubectl set image or the kubectl edit command - this should automatically handle the upgrade.
