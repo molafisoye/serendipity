@@ -1,6 +1,7 @@
 resource "aws_s3_bucket" "serendipity_exercise_output_bucket" {
   bucket = "${terraform.workspace}-exercise-output-bucket"
   acl    = "private"
+  force_destroy = true
 
   tags = merge(local.tags, { "Name" : "${terraform.workspace}-exercise-output-bucket" })
 }
