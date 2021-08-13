@@ -19,25 +19,25 @@ bits and bobs into your S3 account.
 
 5 Run 'terraform apply' and type 'yes' (I promise its safe).
 
-  a) It will ask for the location of your public key (*.pub) you need it to access the instance via (useful for debugging).
+  a) It will ask for the location of your public key (*.pub) you need it to access the instance via SSH (useful for debugging).
 
   b) It will also ask for the location of the init script which will run when the instance starts.
 
-7 Grab a coffee or tea.
+6 Grab a coffee or tea.
 
-6 Via the AWS console or cli the instance should have been created and terminated.
+7 Via the AWS console or cli you can confirm the instance has been created and terminated.
 
-6 In s3 search for the bucket - "serendipity-exercise-output-bucket" and you should have a file -
+8 In s3 search for the bucket - "serendipity-exercise-output-bucket" and you should have a file -
   <instance ip>_python_packages.txt inside it.
 
-7 Don't forget to run 'terraform destroy' afterwards.
+9 Don't forget to run 'terraform destroy' afterwards.
 
 ### *Answers to other questions*
 
-1 To a kubernetes cluster, I would -
+1 To upgrade a kubernetes cluster, I would -
 
   Build and push the latest Docker image to the right registry, usually aws ECR.
-  if this for a production deployment it would usually be handled by a CI/CD pipeline tool such as Jenkins, GitHub Actions,
+  If this for a production deployment, it should be handled by a CI/CD pipeline tool such as Jenkins, GitHub Actions,
   Helm or Concourse.
 
   Use either the kubectl set image or the kubectl edit command - this should automatically handle the upgrade.
